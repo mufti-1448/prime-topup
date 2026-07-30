@@ -1511,7 +1511,6 @@ Mohon konfirmasi pesanan saya. Terima kasih.`;
           "heroOrderBtn",
           "bannerOrderBtn",
           "finalCtaBtn",
-          "footerChannelWaBtn",
           "footerWaBtn",
         ];
 
@@ -1533,7 +1532,22 @@ Mohon konfirmasi pesanan saya. Terima kasih.`;
           igBtn.addEventListener("click", (e) => {
             e.preventDefault();
             window.open(
-              "https://www.instagram.com/prime.topup/",
+              "https://www.instagram.com/primetopup.id/?utm_source=ig_web_button_share_sheet",
+              "_blank",
+              "noopener,noreferrer",
+            );
+          });
+        }
+      }
+
+      // Set Instagram link
+      function setWaChanelLink() {
+        const igBtn = document.getElementById("footerChannelWaBtn");
+        if (igBtn) {
+          igBtn.addEventListener("click", (e) => {
+            e.preventDefault();
+            window.open(
+              "https://whatsapp.com/channel/0029VbCR0SO6GcGAWLRA9J0Q",
               "_blank",
               "noopener,noreferrer",
             );
@@ -1585,6 +1599,7 @@ Mohon konfirmasi pesanan saya. Terima kasih.`;
         renderFAQ();
         setWALinks();
         setInstagramLink();
+        setWaChanelLink();  
         initMobileMenu();
         initPriceTabs();
       });
